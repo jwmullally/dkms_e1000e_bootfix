@@ -27,8 +27,8 @@ affected hardware/BIOS configurations.
 DKMS_DIR=%{buildroot}/usr/src/%{name}-%{version}/
 install -m 755 -d $DKMS_DIR
 install -m 644 dkms.conf $DKMS_DIR/
-install -m 755 -d $DKMS_DIR/e1000e
-install -m 644 -t $DKMS_DIR/e1000e e1000e/*
+install -m 755 -d $DKMS_DIR/src/e1000e
+install -m 644 -t $DKMS_DIR/src/e1000e src/e1000e/*
 install -m 755 -d $DKMS_DIR/patches
 install -m 644 -t $DKMS_DIR/patches patches/*
 
